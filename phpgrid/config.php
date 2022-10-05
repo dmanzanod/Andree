@@ -3,10 +3,10 @@
 // PHP Grid database connection settings, Only need to update these in new project
 
 define("PHPGRID_DBTYPE","mysqli"); // mysql,oci8(for oracle),mssql,postgres,sybase
-define("PHPGRID_DBHOST","localhost");
-define("PHPGRID_DBUSER","andree");
-define("PHPGRID_DBPASS","andree");
-define("PHPGRID_DBNAME","andreeBienestar");
+define("PHPGRID_DBHOST","ec2-3-87-203-241.compute-1.amazonaws.com");
+define("PHPGRID_DBUSER","zazudb2");
+define("PHPGRID_DBPASS","zazu2023");
+define("PHPGRID_DBNAME","bd_andree");
 
 // database charset
 define("PHPGRID_DBCHARSET","utf8");
