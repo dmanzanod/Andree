@@ -1,5 +1,5 @@
 <?php
-    $con = mysqli_connect('localhost','andree','andree','andreeBienestar');
+    $con = mysqli_connect('ec2-3-87-203-241.compute-1.amazonaws.com','zazudb2','zazu2023','bd_andree');
     if (!$con) {
         die('Could not connect: ' . mysqli_error($con));
     }
@@ -7,7 +7,7 @@
     $f = $_GET['nombre'];
     $n = $_GET['clave'];
     
-    mysqli_select_db($con,"andreeBienestar");
+    mysqli_select_db($con,"bd_andree");
     
     $sql="SELECT nombre, lat, lon, descripcion_estacionamiento, valor_estacionamiento, disponible FROM pkit_puntos";
     

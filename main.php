@@ -1,12 +1,12 @@
 <?php
 session_start();
 //*****************VALOR UF MENSUAL *************
-$con = mysqli_connect('localhost','andree','andree','andreeBienestar');
+$con = mysqli_connect('ec2-3-87-203-241.compute-1.amazonaws.com','zazudb2','zazu2023','bd_andree');
 if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
 }
 
-mysqli_select_db($con,"andreeBienestar");
+mysqli_select_db($con,"bd_andree");
 $sql="SELECT valoruf FROM tbluf WHERE ano = '".date(Y)."' AND mes = '".date(n)."'";
 $result = mysqli_query($con,$sql);
 
@@ -32,12 +32,12 @@ mysqli_close($con);
         $dailyIndicators = json_decode($json);
         $UF = intval($dailyIndicators->uf->valor);
         
-        $con = mysqli_connect('localhost','andree','andree','andreeBienestar');
+        $con = mysqli_connect('ec2-3-87-203-241.compute-1.amazonaws.com','zazudb2','zazu2023','bd_andree');
         if (!$con) {
             die('Could not connect: ' . mysqli_error($con));
         }
 
-        mysqli_select_db($con,"andreeBienestar");
+        mysqli_select_db($con,"bd_andree");
         $sql="update tbluf SET valoruf = ".$UF." WHERE ano = '".date(Y)."' AND mes = '".date(n)."'";
         $result = mysqli_query($con,$sql);
 

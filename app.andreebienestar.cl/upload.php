@@ -2,13 +2,13 @@
 
     $count = count($_FILES['files']['name']);
 
-    $con = mysqli_connect('localhost','andree','andree','andreeBienestar');
+    $con = mysqli_connect('ec2-3-87-203-241.compute-1.amazonaws.com','zazudb2','zazu2023','bd_andree');
     
     if (!$con) {
         die('Could not connect: ' . mysqli_error($con));
     }
     
-    mysqli_select_db($con,"andreeBienestar");
+    mysqli_select_db($con,"bd_andree");
     
     $hash = md5(uniqid());
     
@@ -31,13 +31,13 @@ for($index = 0; $index < $count; $index++){
         $data[] = $_FILES['files']['name'][$index];
     }
 
-            $con = mysqli_connect('localhost','andree','andree','andreeBienestar');
+            $con = mysqli_connect('ec2-3-87-203-241.compute-1.amazonaws.com','zazudb2','zazu2023','bd_andree');
             
             if (!$con) {
                 die('Could not connect: ' . mysqli_error($con));
             }
         
-                mysqli_select_db($con,"andreeBienestar");
+                mysqli_select_db($con,"bd_andree");
             
                 
                 $sql1 = "INSERT INTO tbl_imagenes(RUT, nombre_original, nombre_servidor, hash) VALUES ('".$_POST['rut']."', '".$_FILES['files']['name'][$index]."','".$newFileName."','".$hash."')";
@@ -47,12 +47,12 @@ for($index = 0; $index < $count; $index++){
 }
 
 
-                $con = mysqli_connect('localhost','andree','andree','andreeBienestar');
+                $con = mysqli_connect('ec2-3-87-203-241.compute-1.amazonaws.com','zazudb2','zazu2023','bd_andree');
                 if (!$con) {
                     die('Could not connect: ' . mysqli_error($con));
                 }
     
-                mysqli_select_db($con,"andreeBienestar");
+                mysqli_select_db($con,"bd_andree");
                 $sql = "SELECT CONCAT(nomre_asegurado, ' ', apellido_asegurado) as nombre, email_asegurado FROM tbl_asegurado WHERE rut_asegurado = '".$_POST['rut']."'";
                 $result = mysqli_query($con,$sql);
 

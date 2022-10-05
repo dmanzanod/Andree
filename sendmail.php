@@ -2,12 +2,12 @@
 $folio = $_GET['j'];
 //************RECOLECTO LOS DATOS ***********************
 
-$con = mysqli_connect('localhost','andree','andree','andreeBienestar');
+$con = mysqli_connect('ec2-3-87-203-241.compute-1.amazonaws.com','zazudb2','zazu2023','bd_andree');
 if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
 }
 
-mysqli_select_db($con,"andreeBienestar");
+mysqli_select_db($con,"bd_andree");
 
 $sql="SELECT id, rut_asegurado_h, rut_paciente_h, bono_consulta_doctos, Bono_Consulta_pagado, Bono_factor_consulta, Bono_consulta_reembolso, 
 foto_boleta_original_reembolso_isapre_number, 
@@ -186,12 +186,12 @@ if($hopitalizacion_programa_maternidad == "Yes")
 //rut_asegurado_h
 
 
-$con = mysqli_connect('localhost','andree','andree','andreeBienestar');
+$con = mysqli_connect('ec2-3-87-203-241.compute-1.amazonaws.com','zazudb2','zazu2023','bd_andree');
 if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
 }
 
-mysqli_select_db($con,"andreeBienestar");
+mysqli_select_db($con,"bd_andree");
 
 $sql="SELECT nomre_asegurado, apellido_asegurado, apellido2_asegurado, email_asegurado, mnt_UF_asegurado_total, mnt_UF_asegurado, mnt_UF_psico, mnt_UF_recetas, mnt_UF_fono, mnt_UF_kine, mnt_optico FROM tbl_asegurado where rut_asegurado = '".$rut."'";
 

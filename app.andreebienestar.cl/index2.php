@@ -6,12 +6,12 @@ session_start();
       $mypasswordOLD = $_POST['passold'];
       $mypasswordNEW = $_POST['passnew']; 
       
-        $con = mysqli_connect('localhost','andree','andree','andreeBienestar');
+        $con = mysqli_connect('ec2-3-87-203-241.compute-1.amazonaws.com','zazudb2','zazu2023','bd_andree');
         if (!$con) {
             die('Could not connect: ' . mysqli_error($con));
         }
     
-        mysqli_select_db($con,"andreeBienestar");
+        mysqli_select_db($con,"bd_andree");
       
         $sql = "SELECT id, nuevo FROM tbl_users WHERE user = '".$_SESSION['login_user']."' and password = '".$mypasswordOLD."' and active='1' and nuevo='1'";
         $result = mysqli_query($con,$sql);
@@ -20,12 +20,12 @@ session_start();
         mysqli_close($con);
 		
         if($rowcount == 1) {
-                $con = mysqli_connect('localhost','andree','andree','andreeBienestar');
+                $con = mysqli_connect('ec2-3-87-203-241.compute-1.amazonaws.com','zazudb2','zazu2023','bd_andree');
                 if (!$con) {
                     die('Could not connect: ' . mysqli_error($con));
                 }
     
-                mysqli_select_db($con,"andreeBienestar");
+                mysqli_select_db($con,"bd_andree");
         
                 $sql = "UPDATE tbl_users SET password = '".$mypasswordNEW."', nuevo='0' WHERE user = '".$_SESSION['login_user']."'";
                 $result = mysqli_query($con,$sql);

@@ -5,12 +5,12 @@ if($_GET['nro'] != '')
     $f = $_GET['folio'];
     $n = $_GET['nro'];
     
-    $con = mysqli_connect('localhost','andree','andree','andreeBienestar');
+    $con = mysqli_connect('ec2-3-87-203-241.compute-1.amazonaws.com','zazudb2','zazu2023','bd_andree');
     if (!$con) {
         die('Could not connect: ' . mysqli_error($con));
     }
     
-    mysqli_select_db($con,"andreeBienestar");
+    mysqli_select_db($con,"bd_andree");
     $sql="update frm_historic set nro_cheque = '".$n."' WHERE nro_folio = '".$f."'";
     
     $result = mysqli_query($con,$sql);

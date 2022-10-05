@@ -14,12 +14,12 @@ if($_GET['op'] == 1)
           $myusername = $_POST['email'];
           $mypassword = $_POST['pass']; 
           
-          $con = mysqli_connect('localhost','andree','andree','andreeBienestar');
+          $con = mysqli_connect('ec2-3-87-203-241.compute-1.amazonaws.com','zazudb2','zazu2023','bd_andree');
             if (!$con) {
                 die('Could not connect: ' . mysqli_error($con));
             }
         
-            mysqli_select_db($con,"andreeBienestar");
+            mysqli_select_db($con,"bd_andree");
             
             $sql = "SELECT id, nuevo FROM tbl_users WHERE user = '".$myusername."' and password = '".$mypassword."' and active='1'";
             $result = mysqli_query($con,$sql);
