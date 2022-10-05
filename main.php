@@ -1514,7 +1514,7 @@ $col["formatoptions"] = array("prefix" => "$",
                                 "suffix" => '',
                                 "thousandsSeparator" => ".",
                                 "decimalSeparator" => ",",
-                                "decimalPlaces" => 4);
+                                "decimalPlaces" => 0);
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"26", "colpos"=>"2");
