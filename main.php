@@ -625,7 +625,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"6", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, "defaultValue"=>'0');
 $cols[] = $col;
 
 $col = array();
@@ -679,7 +679,7 @@ $col["width"] = "2";
 $col["editable"] = false;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"7", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, "defaultValue"=>'0');
 $cols[] = $col;
 
 $col = array();
@@ -733,7 +733,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"8", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, "defaultValue"=>'0');
 $cols[] = $col;
 
 $col = array();
@@ -789,7 +789,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"9", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, "defaultValue"=>'0');
 $cols[] = $col;
 
 $col = array();
@@ -845,7 +845,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"10", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, "defaultValue"=>'0');
 $cols[] = $col;
 
 $col = array();
@@ -899,7 +899,7 @@ $col["formatoptions"] = array("prefix" => "$",
                                 "decimalSeparator" => ",",
                                 "decimalPlaces" => 4);
 $col["formoptions"] = array("rowpos"=>"11", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>7, "defaultValue"=>'');
+$col["editoptions"] = array("tabindex"=>"103", "size"=>7, "defaultValue"=>'0');
 $cols[] = $col;
 //*****************************Saldo Actual**************************
 $col = array();
@@ -926,7 +926,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"13", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, , "defaultValue"=>'0');
 $cols[] = $col;
 
 $col = array();
@@ -985,7 +985,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"14", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, "defaultValue"=>'0');
 $cols[] = $col;
 
 $col = array();
@@ -1044,7 +1044,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"15", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, "defaultValue"=>'0');
 $cols[] = $col;
 
 $col = array();
@@ -1103,7 +1103,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"16", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, , "defaultValue"=>'0');
 $cols[] = $col;
 
 $col = array();
@@ -1231,7 +1231,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"21", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, , "defaultValue"=>'0');
 $cols[] = $col;
 
 $col = array();
@@ -1290,7 +1290,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"22", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, , "defaultValue"=>'0');
 $cols[] = $col;
 
 $col = array();
@@ -1347,7 +1347,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"23", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, , "defaultValue"=>'0');
 $cols[] = $col;
 
 $col = array();
@@ -1445,7 +1445,7 @@ $col["width"] = "2";
 $col["editable"] = false;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"25", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, , "defaultValue"=>'0');
 $cols[] = $col;
 
 $col = array();
@@ -1502,7 +1502,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"26", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, , "defaultValue"=>'0');
 $cols[] = $col;
 
 $col = array();
@@ -1559,7 +1559,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"27", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, , "defaultValue"=>'0');
 $cols[] = $col;
 
 $col = array();
@@ -1616,7 +1616,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"28", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, , "defaultValue"=>'0');
 $cols[] = $col;
 
 $col = array();
@@ -1673,7 +1673,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"29", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, , "defaultValue"=>'0');
 $cols[] = $col;
 
 //**************************************************
@@ -1684,7 +1684,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"30", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, , "defaultValue"=>'0');
 $cols[] = $col;
 
 //**************************************************
@@ -1696,7 +1696,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"31", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, , "defaultValue"=>'0');
 $cols[] = $col;
 
 $col = array();
@@ -1753,7 +1753,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"32", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, , "defaultValue"=>'0');
 $cols[] = $col;
 
 $col = array();
@@ -1799,7 +1799,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"33", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, , "defaultValue"=>'0');
 $cols[] = $col;
 
 //*******************************************************************
@@ -1811,7 +1811,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"34", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, , "defaultValue"=>'0');
 $cols[] = $col;
 
 //*******************************************************************
@@ -1829,7 +1829,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"35", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, , "defaultValue"=>'0');
 $cols[] = $col;
 
 $col = array();
@@ -1887,7 +1887,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"36", "colpos"=>"1");
-$col["editoptions"] = array("tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("tabindex"=>"103", "size"=>3, , "defaultValue"=>'0');
 $cols[] = $col;
 
 $col = array();
