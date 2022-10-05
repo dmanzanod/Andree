@@ -509,7 +509,7 @@ FROM frm_historic WHERE rut_asegurado_h = '".$_GET["rut_asegurado"]."'";
 
 //$rs = $g->execute_query("select folio_number from folio;");
 
-$axu1=0;
+var $axu1=0;
 
 $col = array();
 $col["title"] = "id"; // caption of column
@@ -571,7 +571,7 @@ $col["width"] = "2";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"5", "colpos"=>"1");
-$col["editoptions"] = array("defaultValue"=>$aux1, "tabindex"=>"103", "size"=>3);
+$col["editoptions"] = array("defaultValue"=>$axu1, "tabindex"=>"103", "size"=>3);
 $cols[] = $col;
 
 $col = array();
