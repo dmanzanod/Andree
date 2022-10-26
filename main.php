@@ -2017,7 +2017,7 @@ $cols[] = $col;
 //$col["editable"] = false;
 //$col["search"] = false;
 //$col["align"] = "center";
-//$col["link"] = "http://www.andreebienestar.cl/topdf/TCPDF-master/examples/reportepdf.php?id={nro_folio}";
+//$col["link"] = "http://sistema.andreebienestar.cl/topdf/TCPDF-master/examples/reportepdf.php?id={nro_folio}";
 //$col["linkoptions"] = "target='_blank'";
 //$col["hidden"] = true;
 //$cols[] = $col;
@@ -2143,13 +2143,13 @@ $out1 = $g1->render("list2");
     var myWindow;
 
     function openWin(op) {
-        window.open("http://www.andreebienestar.cl/sendmail.php?j="+op, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=200,height=200");
+        window.open("http://sistema.andreebienestar.cl/sendmail.php?j="+op, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=200,height=200");
     }
     
     function openWin1(op) {
         var left = (screen.width - myWidth) / 2;
         var top = (screen.height - myHeight) / 4;
-        window.open("http://www.andreebienestar.cl/topdf/TCPDF-master/examples/reportepdf.php?id="+op, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=300,left=300,width=800,height=600");
+        window.open("http://sistema.andreebienestar.cl/topdf/TCPDF-master/examples/reportepdf.php?id="+op, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=300,left=300,width=800,height=600");
     }
     
     function openWin2(op) {
@@ -2157,7 +2157,7 @@ $out1 = $g1->render("list2");
         var left = 300;
         var top = 400;
 
-        window.open("http://www.andreebienestar.cl/cheque.php?folio="+op, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=" + top + ",left=" + left + ",width=400,height=140");
+        window.open("http://sistema.andreebienestar.cl/cheque.php?folio="+op, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=" + top + ",left=" + left + ",width=400,height=140");
     }
 
 	function update_field_consulta()
