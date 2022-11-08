@@ -1669,7 +1669,7 @@ $cols[] = $col;
 $col = array();
 $col["title"] = "Fonoaudiología Saldo Anterior"; // caption of column
 $col["name"] = "fono_saldo"; 
-$col["width"] = "2";
+$col["width"] = "7";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"29", "colpos"=>"1");
@@ -1680,7 +1680,7 @@ $cols[] = $col;
 $col = array();
 $col["title"] = "Fonoaudiología Saldo Actual (Tope 10UF)"; // caption of column
 $col["name"] = "fono_saldo_actual"; 
-$col["width"] = "2";
+$col["width"] = "7";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"30", "colpos"=>"1");
@@ -1795,7 +1795,7 @@ $cols[] = $col;
 $col = array();
 $col["title"] = "Kinesioterapia Saldo Anterior"; // caption of column
 $col["name"] = "kine_saldo";
-$col["width"] = "2";
+$col["width"] = "7";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"33", "colpos"=>"1");
@@ -1807,7 +1807,7 @@ $cols[] = $col;
 $col = array();
 $col["title"] = "Kinesioterapia Saldo Actual (Tope 10UF)"; // caption of column
 $col["name"] = "kine_saldo_actual";
-$col["width"] = "2";
+$col["width"] = "7";
 $col["editable"] = true;
 $col["visible"] = false;
 $col["formoptions"] = array("rowpos"=>"34", "colpos"=>"1");
@@ -2840,7 +2840,7 @@ $out1 = $g1->render("list2");
             xmlhttp.send();
         }
         
-        if(aux4 == "")
+        if(aux4 != "")
         {
         
             if (window.XMLHttpRequest) {
@@ -2855,6 +2855,7 @@ $out1 = $g1->render("list2");
                 if (this.readyState == 4 && this.status == 200) {
                     nro4 = this.responseText;
                     nro4 = parseFloat(nro4).toFixed(4);
+                    alert(nro4);
                     {jQuery('input[name="fono_saldo"]:visible').val(nro4);}
                 }
             };
