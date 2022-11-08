@@ -2885,7 +2885,7 @@ $out1 = $g1->render("list2");
             xmlhttp.send();
         }
         
-        if(aux6 == "")
+        if(aux6 != "" || aux6 == 0)
         {
         
             if (window.XMLHttpRequest) {
