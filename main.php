@@ -2796,7 +2796,7 @@ $out1 = $g1->render("list2");
             xmlhttp.send();
         }
         
-        if(aux2 == "")
+        if(aux2 != "" || aux2 == 0)
         {
         
             if (window.XMLHttpRequest) {
@@ -2863,7 +2863,7 @@ $out1 = $g1->render("list2");
             xmlhttp.send();
         }
         
-        if(aux5 == "")
+        if(aux6 != "" || aux6 == 0)
         {
         
             if (window.XMLHttpRequest) {
