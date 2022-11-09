@@ -2143,7 +2143,7 @@ $out1 = $g1->render("list2");
     var myWindow;
 
     function openWin(op) {
-        window.open("http://sistema.andreebienestar.cl/sendmail.php?j="+op, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=200,height=200");
+        window.open("http://ec2-52-90-113-228.compute-1.amazonaws.com/sendmail.php?j="+op, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=200,height=200");
     }
     
     function openWin1(op) {
