@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$con = mysqli_connect('ec2-44-204-145-91.compute-1.amazonaws.com','zazudb2','zazu2023','bd_andree');
+$con = mysqli_connect('ec2-52-90-113-228.compute-1.amazonaws.com','zazudb2','zazu2023','bd_andree');
 if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
 }

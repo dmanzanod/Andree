@@ -12,7 +12,7 @@ if($_GET['op'] == 1)
           // username and password sent from form 
           $myusername = $_GET['usr'];
           
-          $con = mysqli_connect('ec2-44-204-145-91.compute-1.amazonaws.com','zazudb2','zazu2023','bd_andree');
+          $con = mysqli_connect('ec2-52-90-113-228.compute-1.amazonaws.com','zazudb2','zazu2023','bd_andree');
             if (!$con) {
                 die('Could not connect: ' . mysqli_error($con));
             }
@@ -58,7 +58,7 @@ if($_GET['op'] == 1)
     
  //* TRAIGO DATOS BENEFISIARIO
              
-            $con = mysqli_connect('eec2-44-204-145-91.compute-1.amazonaws.com','zazudb2','zazu2023','bd_andree');
+            $con = mysqli_connect('eec2-52-90-113-228.compute-1.amazonaws.com','zazudb2','zazu2023','bd_andree');
             
             if (!$con) {
                 die('Could not connect: ' . mysqli_error($con));
