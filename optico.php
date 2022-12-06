@@ -25,7 +25,7 @@ if ($row != 0)
 
 
     while($row1 = mysqli_fetch_array($result1)) {
-        echo $row1['mnt_UF_recetas'];
+        echo $row1['mnt_optico'];
     }
 
 }
