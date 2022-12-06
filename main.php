@@ -2793,7 +2793,6 @@ $out1 = $g1->render("list2");
                     {jQuery('input[name="nro_folio"]:visible').val(nro);}
 
                     update_nroFolio_2(nro, rut);
-
                 }
             };
             xmlhttp.open("GET","folio.php",true);
@@ -2804,8 +2803,6 @@ $out1 = $g1->render("list2");
 
     function update_nroFolio_2(folio, rut)
     {
-        alert(folio);
-        alert(rut);
             if (window.XMLHttpRequest) {
                 // code for IE7+, Firefox, Chrome, Opera, Safari
                 xmlhttp = new XMLHttpRequest();
