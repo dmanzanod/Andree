@@ -2904,7 +2904,7 @@ $out1 = $g1->render("list2");
                     {jQuery('input[name="kine_saldo"]:visible').val(nro6);}
                 }
             };
-            xmlhttp.open("GET","kine.php?rut="+rut,true);
+            xmlhttp.open("GET","kine.php?rut="+folio,true);
             xmlhttp.send();
         }
     }
