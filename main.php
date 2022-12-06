@@ -2802,7 +2802,7 @@ $out1 = $g1->render("list2");
     }
 
 
-    function update_nroFolio_2()
+    function update_nroFolio_2(folio, rut)
     {
         
             if (window.XMLHttpRequest) {
