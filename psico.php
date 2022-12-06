@@ -5,7 +5,7 @@ if (!$con) {
 }
 
 mysqli_select_db($con,"bd_andree");
-$sql = "SELECT saldo_anterior from frm_historic where nro_folio = '.$_GET['folio'].'";
+$sql = "SELECT consulta_psico_reembolso from frm_historic where nro_folio = '".$_GET['folio']."';";
 $result = mysqli_query($con,$sql);
 
 $row = mysqli_num_rows($result);
@@ -13,7 +13,7 @@ $row = mysqli_num_rows($result);
 if ($row != 0)
 {
     while($row = mysqli_fetch_array($result)) {
-        echo $row['saldo_anterior'];
+        echo $row['consulta_psico_reembolso'];
     }
     
 }else{
