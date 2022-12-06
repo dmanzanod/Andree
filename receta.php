@@ -5,11 +5,30 @@ if (!$con) {
 }
 
 mysqli_select_db($con,"bd_andree");
-$sql="SELECT saldo_anterior_receta from frm_historic where nro_folio = '".$_GET['rut']."';";
+
+
+
+$sql="SELECT saldo_anterior_receta from frm_historic where nro_folio = '".$_GET['folio']."';";
 $result = mysqli_query($con,$sql);
 
-while($row = mysqli_fetch_array($result)) {
-    echo $row['saldo_anterior_receta'];
+
+$row = mysqli_num_rows($result);
+
+if ($row)
+{
+        while($row = mysqli_fetch_array($result)) {
+            echo $row['saldo_anterior_receta'];
+        }
+    
+    }else{
+
+        $sql="SELECT mnt_UF_recetas FROM tbl_asegurado WHERE rut_asegurado = '".$_GET['rut']."';";
+        $result = mysqli_query($con,$sql);
+        
+        while($row = mysqli_fetch_array($result)) {
+            echo $row['mnt_UF_recetas'];
+        }
+
 }
 mysqli_close($con);
 ?>
