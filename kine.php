@@ -5,11 +5,34 @@ if (!$con) {
 }
 
 mysqli_select_db($con,"bd_andree");
-$sql="SELECT kine_saldo from frm_historic where nro_folio = '".$_GET['rut']."';";
+$sql="SELECT kine_saldo from frm_historic where nro_folio = '".$_GET['folio']."';";
 $result = mysqli_query($con,$sql);
 
-while($row = mysqli_fetch_array($result)) {
-    echo $row['kine_saldo'];
+
+$row = mysqli_num_rows($result);
+
+if ($row != 0)
+{
+    while($row = mysqli_fetch_array($result)) {
+        echo $row['kine_saldo'];
+    }
+    
+}else{
+    
+    $sql1="SELECT mnt_UF_kine FROM tbl_asegurado WHERE rut_asegurado = '".$_GET['rut']."' Limit 1;";
+    $result1 = mysqli_query($con,$sql1);
+
+
+    while($row1 = mysqli_fetch_array($result1)) {
+        echo $row1['mnt_UF_kine'];
+    }
+
 }
+
+mysqli_free_result($result);
+mysqli_free_result($result1);
+
+
+
 mysqli_close($con);
 ?>
