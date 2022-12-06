@@ -2815,7 +2815,7 @@ $out1 = $g1->render("list2");
                     {jQuery('input[name="cristales_opticos_saldo"]:visible').val(nro2);}
                 }
             };
-            xmlhttp.open("GET","optico.php?rut="+rut,true);
+            xmlhttp.open("GET","optico.php?rut="+folio,true);
             xmlhttp.send();
         }
         
