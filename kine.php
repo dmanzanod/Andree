@@ -5,9 +5,8 @@ if (!$con) {
 }
 
 mysqli_select_db($con,"bd_andree");
-$sql="SELECT kine_saldo from frm_historic where nro_folio = '".$_GET['folio']."';";
+$sql = "SELECT kine_saldo from frm_historic where nro_folio = '".$_GET['folio']."';";
 $result = mysqli_query($con,$sql);
-
 
 $row = mysqli_num_rows($result);
 

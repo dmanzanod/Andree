@@ -5,7 +5,6 @@ if (!$con) {
 }
 
 mysqli_select_db($con,"bd_andree");
-//$sql="SELECT mnt_UF_psico FROM tbl_asegurado WHERE rut_asegurado = '".$_GET['rut']."'";
 $sql = "SELECT saldo_anterior from frm_historic where nro_folio = '.$_GET['folio'].'";
 $result = mysqli_query($con,$sql);
 
