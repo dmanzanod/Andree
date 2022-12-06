@@ -13,7 +13,6 @@ $result = mysqli_query($con,$sql);
 
 
 $row = mysqli_num_rows($result);
-echo $row;
 
 if ($row)
 {
@@ -21,9 +20,20 @@ if ($row)
             echo $row['saldo_anterior_receta'];
         }
     
+}else{
+    
+    $sql1="SELECT mnt_UF_recetas FROM tbl_asegurado WHERE rut_asegurado = '".$_GET['rut']."' Limit 1;";
+    $result1 = mysqli_query($con,$sql1);
+
+
+    while($row1 = mysqli_fetch_array($result1)) {
+        echo $row1['saldo_anterior_receta'];
+    }
+
 }
 
 mysqli_free_result($result);
+mysqli_free_result($result1);
 
 mysqli_close($con);
 ?>
