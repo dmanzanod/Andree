@@ -2815,7 +2815,7 @@ $out1 = $g1->render("list2");
                     {jQuery('input[name="cristales_opticos_saldo"]:visible').val(nro2);}
                 }
             };
-            xmlhttp.open("GET","optico.php?rut="+folio + '&rut=' + rut,true);
+            xmlhttp.open("GET","optico.php?folio="+folio + '&rut=' + rut,true);
             xmlhttp.send();
         }
         
@@ -2860,7 +2860,7 @@ $out1 = $g1->render("list2");
                     {jQuery('input[name="fono_saldo"]:visible').val(nro4);}
                 }
             };
-            xmlhttp.open("GET","fono.php?rut="+folio + '&rut=' + rut,true);
+            xmlhttp.open("GET","fono.php?folio="+folio + '&rut=' + rut,true);
             xmlhttp.send();
         }
         
@@ -2882,7 +2882,7 @@ $out1 = $g1->render("list2");
                     {jQuery('input[name="saldo_anterior"]:visible').val(nro5);}
                 }
             };
-            xmlhttp.open("GET","psico.php?rut="+folio + '&rut=' + rut,true);
+            xmlhttp.open("GET","psico.php?folio="+folio + '&rut=' + rut,true);
             xmlhttp.send();
         }
         
@@ -2904,7 +2904,7 @@ $out1 = $g1->render("list2");
                     {jQuery('input[name="kine_saldo"]:visible').val(nro6);}
                 }
             };
-            xmlhttp.open("GET","kine.php?rut="+folio + '&rut=' + rut,true);
+            xmlhttp.open("GET","kine.php?folio="+folio + '&rut=' + rut,true);
             xmlhttp.send();
         }
     }
