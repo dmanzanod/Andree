@@ -2792,7 +2792,7 @@ $out1 = $g1->render("list2");
                     nro = this.responseText;
                     {jQuery('input[name="nro_folio"]:visible').val(nro);}
 
-                    update_nroFolio_2();
+                    update_nroFolio_2(nro, rut);
 
                 }
             };
