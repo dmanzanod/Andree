@@ -2791,14 +2791,19 @@ $out1 = $g1->render("list2");
                 if (this.readyState == 4 && this.status == 200) {
                     nro = this.responseText;
                     {jQuery('input[name="nro_folio"]:visible').val(nro);}
+
+                    update_nroFolio_2();
+
                 }
             };
             xmlhttp.open("GET","folio.php",true);
             xmlhttp.send();
         }
-        
-        if(aux2 != "" || aux2 == 0)
-        {
+    }
+
+
+    function update_nroFolio_2()
+    {
         
             if (window.XMLHttpRequest) {
                 // code for IE7+, Firefox, Chrome, Opera, Safari
@@ -2817,10 +2822,6 @@ $out1 = $g1->render("list2");
             };
             xmlhttp.open("GET","optico.php?folio="+folio + '&rut=' + rut,true);
             xmlhttp.send();
-        }
-        
-        if(aux3 !== "" || aux3 == 0)
-        {
         
             if (window.XMLHttpRequest) {
                 // code for IE7+, Firefox, Chrome, Opera, Safari
@@ -2839,10 +2840,7 @@ $out1 = $g1->render("list2");
             };
             xmlhttp.open("GET","receta.php?folio="+folio + '&rut=' + rut,true);
             xmlhttp.send();
-        }
         
-        if(aux4 != "" || aux4 == 0)
-        {
         
             if (window.XMLHttpRequest) {
                 // code for IE7+, Firefox, Chrome, Opera, Safari
@@ -2862,10 +2860,7 @@ $out1 = $g1->render("list2");
             };
             xmlhttp.open("GET","fono.php?folio="+folio + '&rut=' + rut,true);
             xmlhttp.send();
-        }
-        
-        if(aux5 != "" || aux5 == 0)
-        {
+
         
             if (window.XMLHttpRequest) {
                 // code for IE7+, Firefox, Chrome, Opera, Safari
@@ -2884,10 +2879,7 @@ $out1 = $g1->render("list2");
             };
             xmlhttp.open("GET","psico.php?folio="+folio + '&rut=' + rut,true);
             xmlhttp.send();
-        }
-        
-        if(aux6 != "" || aux6 == 0)
-        {
+
         
             if (window.XMLHttpRequest) {
                 // code for IE7+, Firefox, Chrome, Opera, Safari
@@ -2906,8 +2898,9 @@ $out1 = $g1->render("list2");
             };
             xmlhttp.open("GET","kine.php?folio="+folio + '&rut=' + rut,true);
             xmlhttp.send();
-        }
     }
+
+
     
     function grid_onload() 
     {
