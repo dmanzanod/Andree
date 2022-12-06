@@ -27,7 +27,7 @@ if ($row)
 
 
     while($row1 = mysqli_fetch_array($result1)) {
-        echo $row1['saldo_anterior_receta'];
+        echo $row1['mnt_UF_recetas'];
     }
 
 }
