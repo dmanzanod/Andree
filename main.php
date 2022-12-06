@@ -2860,7 +2860,7 @@ $out1 = $g1->render("list2");
                     {jQuery('input[name="fono_saldo"]:visible').val(nro4);}
                 }
             };
-            xmlhttp.open("GET","fono.php?rut="+rut,true);
+            xmlhttp.open("GET","fono.php?rut="+folio,true);
             xmlhttp.send();
         }
         
