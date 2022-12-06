@@ -2774,6 +2774,7 @@ $out1 = $g1->render("list2");
         var aux6 = $('#kine_saldo').val();
         
         var rut = rd;
+        var folio = aux;
         
         if(aux == "")
         {
@@ -2881,7 +2882,7 @@ $out1 = $g1->render("list2");
                     {jQuery('input[name="saldo_anterior"]:visible').val(nro5);}
                 }
             };
-            xmlhttp.open("GET","psico.php?rut="+rut,true);
+            xmlhttp.open("GET","psico.php?rut="+folio,true);
             xmlhttp.send();
         }
         

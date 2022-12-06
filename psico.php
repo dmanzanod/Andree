@@ -5,11 +5,12 @@ if (!$con) {
 }
 
 mysqli_select_db($con,"bd_andree");
-$sql="SELECT mnt_UF_psico FROM tbl_asegurado WHERE rut_asegurado = '".$_GET['rut']."'";
+//$sql="SELECT mnt_UF_psico FROM tbl_asegurado WHERE rut_asegurado = '".$_GET['rut']."'";
+$sql = "SELECT saldo_anterior from frm_historic where nro_folio = '.$_GET['rut'].'";
 $result = mysqli_query($con,$sql);
 
 while($row = mysqli_fetch_array($result)) {
-    echo $row['mnt_UF_psico'];
+    echo $row['saldo_anterior'];
 }
 mysqli_close($con);
 ?>
