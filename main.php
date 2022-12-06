@@ -2837,7 +2837,7 @@ $out1 = $g1->render("list2");
                     {jQuery('input[name="saldo_anterior_receta"]:visible').val(nro3);}
                 }
             };
-            xmlhttp.open("GET","receta.php?rut="+rut,true);
+            xmlhttp.open("GET","receta.php?rut="+folio,true);
             xmlhttp.send();
         }
         
