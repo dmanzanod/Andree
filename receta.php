@@ -14,7 +14,7 @@ $result = mysqli_query($con,$sql);
 
 $row = mysqli_num_rows($result);
 
-if ($row)
+if ($row != 0)
 {
         while($row = mysqli_fetch_array($result)) {
             echo $row['saldo_anterior_receta'];
