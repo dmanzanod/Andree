@@ -14,7 +14,8 @@ if($_GET['op'] == 1)
           $myusername = $_POST['email'];
           $mypassword = $_POST['pass']; 
           
-          $con = mysqli_connect('ec2-52-90-113-228.compute-1.amazonaws.com','zazudb2','zazu2023','bd_andree');
+        // $con = mysqli_connect('ec2-52-90-113-228.compute-1.amazonaws.com','zazudb2','zazu2023','bd_andree');
+        $con = mysqli_connect('roundhouse.proxy.rlwy.net:23957','root','dDbFeEd4C5-5-C5fgFb4ECdEbhD5A5C6','bd_andree');
             if (!$con) {
                 die('Could not connect: ' . mysqli_error($con));
             }
